@@ -1,0 +1,17 @@
+public class Solution {
+    /**
+    给定两个字符串，请设计一个方法来判定其中一个字符串是否为另一个字符串的置换。
+  置换的意思是，通过改变顺序可以使得两个字符串相等。
+    解法：将字符排序后判断是否相等
+     */
+    public static boolean stringPermutation(String A, String B) {
+    	char[] a = A.toCharArray();
+    	char[] b = B.toCharArray();
+        Arrays.sort(a);
+        Arrays.sort(b);
+        if(Arrays.equals(a,b)){
+            return true;
+        }
+        return false;
+    }
+}
