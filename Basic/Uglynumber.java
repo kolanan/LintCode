@@ -1,4 +1,4 @@
-public class Uglynumber {
+public class Solution {
     /**
      * @param num an integer
      * @return true if num is an ugly number or false
